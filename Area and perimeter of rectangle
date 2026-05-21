@@ -1,0 +1,18 @@
+/* Name:- Navinya Vijay Tayade
+   PRN no:- L011
+   Branch:- EXTC-(R)
+*/
+#include<stdio.h>
+int main()
+{
+    int L1,B2,a1,p2;
+    printf("enter first length =");
+    scanf("%d",&L1);
+    printf("enter second breadth =");
+    scanf("%d",&B2);
+    a1=L1*B2;
+    printf("\n area of rectangle is %d",a1);
+    p2= 2*(L1+B2);
+    printf("\n perimeter of rectangle is%d",p2);
+    return 0;
+}
