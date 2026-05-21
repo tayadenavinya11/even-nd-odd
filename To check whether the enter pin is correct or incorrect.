@@ -1,0 +1,21 @@
+/* NAME:- navinya vijay tayade
+   PRN:- 2503033111372L011
+   BRANCH:-EXTC-R
+   DATE:-1/04/26 TIME:-11:00AM TO 1:00PM */
+
+#include<stdio.h>
+int main()
+{
+    int s_pin,u_pin;
+    s_pin = 4567;
+    printf("enter the pin =\t");
+    scanf("%d",&u_pin);
+    if(s_pin == u_pin) {
+        printf("CORRECT PIN");
+        
+    }
+    else{
+        printf("INCORRECT PIN");
+    }
+    return 0;
+}
