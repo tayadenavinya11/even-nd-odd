@@ -1,0 +1,23 @@
+//NAME: NAVINYA VIJAY TAYADE
+//PRN: 2503033111372L011
+//TITLE: PROGRAM TO PRINT FIBONACCI SERIES
+
+#include <stdio.h>
+
+int main()
+{
+    int i, pren = 1, curr = 0, nexn;
+
+    printf("Fibonacci Series : ");
+
+    for(i = 1; i < 11; i++)
+    {
+        nexn = pren + curr;
+        pren = curr;
+        curr = nexn;
+
+        printf("%d ", nexn);
+    }
+
+    return 0;
+}
