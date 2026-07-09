@@ -1,0 +1,26 @@
+//NAME: NAVINYA VIJAY TAYADE
+//PRN: 2503033111372L011
+//TITLE: PROGRAM TO CHECK WHETHER A NUMBER IS EVEN OR ODD
+
+#include <stdio.h>
+
+int main()
+{
+    int num, rem;
+
+    printf("Enter number:\t");
+    scanf("%d", &num);
+
+    rem = num % 2;
+
+    if(rem == 0)
+    {
+        printf("The given number is even");
+    }
+    else
+    {
+        printf("The given number is odd");
+    }
+
+    return 0;
+}
