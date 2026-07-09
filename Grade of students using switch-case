@@ -1,0 +1,47 @@
+//NAME: NAVINYA VIJAY TAYADE
+//PRN: 2503033111372L011
+//TITLE: PROGRAM TO FIND THE GRADE OF A STUDENT USING SWITCH-CASE
+
+#include <stdio.h>
+
+int main()
+{
+    int marks;
+
+    printf("Enter Marks (0-100): ");
+    scanf("%d", &marks);
+
+    // Validate the input
+    if (marks < 0 || marks > 100)
+    {
+        printf("Invalid Marks\n");
+        return 1;
+    }
+
+    // Use switch-case for the validated ranges
+    switch (marks / 10)
+    {
+        case 10:
+        case 9:
+            printf("Grade A+\n");
+            break;
+
+        case 8:
+        case 7:
+            printf("Grade A\n");
+            break;
+
+        case 6:
+        case 5:
+            printf("Grade B\n");
+            break;
+
+        default:
+            printf("Grade C\n");
+            break;
+    }
+
+    printf("Thank You!\n");
+
+    return 0;
+}
