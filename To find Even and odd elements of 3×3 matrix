@@ -1,0 +1,48 @@
+//NAME: NAVINYA VIJAY TAYADE
+//PRN: 2503033111372L011
+//TITLE: PROGRAM TO FIND EVEN AND ODD ELEMENTS OF A 3×3 MATRIX
+
+#include <stdio.h>
+
+int main()
+{
+    int a[3][3], i, j;
+
+    printf("Enter 3x3 matrix elements:\n");
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    printf("\nEven Numbers:\n");
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            if(a[i][j] % 2 == 0)
+            {
+                printf("%d\t", a[i][j]);
+            }
+        }
+    }
+
+    printf("\n\nOdd Numbers:\n");
+
+    for(i = 0; i < 3; i++)
+    {
+        for(j = 0; j < 3; j++)
+        {
+            if(a[i][j] % 2 != 0)
+            {
+                printf("%d\t", a[i][j]);
+            }
+        }
+    }
+
+    return 0;
+}
